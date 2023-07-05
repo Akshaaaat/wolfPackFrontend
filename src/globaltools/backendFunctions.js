@@ -13,7 +13,7 @@ const BackendFunctions = () => {
   /* NOTE 5617: 
     Wherever we are exporting backend Functions we need to render this react component 
     as well because we can't use userContext Hook if we don't render this function at all.
-    We have rendered it in the app.js component so that we don't need to render this thing elsewhere/
+    We have rendered it in the app.js component so that we don't need to render this component elsewhere.
   */
   const temp = useContext(UserContext)
   backEndUrl = temp.backEndUrl

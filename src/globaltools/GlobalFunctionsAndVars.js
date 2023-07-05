@@ -9,7 +9,6 @@ const backEndUrl = "http://localhost:3000";
 const GlobalFunctionsAndVars = (props) =>{
     const [email, setEmail] = useState(localStorage.getItem('wolfpackemail'))
     const [userName, setUserName] = useState(localStorage.getItem('wolfpackusername'))
-    
     return(  
         <UserContext.Provider value ={{email, setEmail, userName, setUserName, backEndUrl}}>
             {props.children}
